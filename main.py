@@ -8,24 +8,25 @@ Created on Sat Mar 21 22:37:26 2020
 
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 import warnings
 warnings.filterwarnings("ignore")
 from basic import basicalgos
 from advance import randomforest, svm, gradientboost
 import threading as th
+from clean import cleaning
 
 scaler = MinMaxScaler()
-normalize = StandardScaler()
 
-USAhousing = pd.read_csv('USA_Housing.csv')
+data = pd.read_csv('USA_Housing.csv')
 
-X = USAhousing[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',
+X = data[['Avg. Area Income', 'Avg. Area House Age', 'Avg. Area Number of Rooms',
                'Avg. Area Number of Bedrooms', 'Area Population']]
-y = USAhousing['Price']
+y = data['Price']
+X,y = cleaning(X,y)
 X = scaler.fit_transform(X)
-X = normalize.fit_transform(X)
+
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=101)
 
