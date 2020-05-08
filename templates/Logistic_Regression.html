@@ -50,16 +50,16 @@
 <body>
     <section style="background-image: url(&quot;static/assets/img/header-bg.jpg&quot;);">
         <div class="container d-flex justify-content-center align-items-center" style="height: 300px;width: 100%;">
-            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LINEAR REGRESSION</h1>
+            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LOGISTIC REGRESSION</h1>
         </div>
     </section>
     <section class="position-relative" style="background-color: #e7e4e4;padding:0px;">
         <div class="container justify-content-center align-items-center position-relative" style="width: 100%;">
-            <h4 style="padding: 20px 0px 0px 0px;">What is Linear Regression?</h4>
-            <p>Linear regression is a basic and commonly used type of predictive analysis. &nbsp;The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? &nbsp;(2)
-                Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable? &nbsp;These regression estimates are used
-                to explain the relationship between one dependent variable and one or more independent variables. &nbsp;The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x,
-                where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.<br><br></p>
+            <h4 style="padding: 20px 0px 0px 0px;">What is Logistic Regression?</h4>
+            <p>Logistic regression is used widely to examine and describe the relationship between a binary response variable (e.g., ‘success’ or ‘failure’) and a set of predictor variables. In common with linear regression (e.g., Linear Hypothesis: Regression (Basics)), the primary objective of logistic regression is to model the mean of the response variable, given a set of predictor variables. However, what distinguishes logistic regression from linear regression is that the response variable is binary rather than continuous in nature. This has a number of consequences for modeling the mean of the response variable. In this article the main features of logistic regression are described and some aspects of interpretation of logistic regression are illustrated with an example.
+
+
+<br><br></p>
             <div class="row">
                 <div class="col"><img class="img-fluid" src="static/assets/img/linear_regression.gif"></div>
                 <div class="col"><img src="static/assets/img/lin2.gif" height="100%" width="100%"></div>
@@ -69,12 +69,16 @@
     <section class="d-flex justify-content-center align-items-center align-content-center" id="adv" style="padding:50px 0px;height: auto;background-color: #e7e4e4;">
         <div class="container" style="height:auto;background-color: #e7e4e4;">
             <h1 class="d-flex justify-content-start align-items-center align-content-center" style="height: 20px;">When to use it?</h1>
-            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul><li> There must be&nbsp;<strong>linear relationship</strong>&nbsp;between independent and dependent variables.</li><br><li> Multiple regression suffers from&nbsp;<strong>multicollinearity, autocorrelation, heteroskedasticity</strong>.</li><br><li>Linear
-            Regression is very sensitive to&nbsp;<strong>Outliers</strong>.</li><br><li> It can terribly affect the regression line and&nbsp;eventually the forecasted values.</li><br><li>Multicollinearity can increase the variance of the coefficient estimates
-            and make the estimates very sensitive to minor changes in the model.The result is that the coefficient estimates are unstable.</li>li<br><li> In case of multiple independent variables,
-                we can go with&nbsp;<strong>forward selection</strong>,&nbsp;<strong>backward elimination</strong>&nbsp;and&nbsp;<strong>step wise approach</strong>&nbsp;for selection of most significant
-                independent variables.</li><br><br><br><br><br></p>
-        </ul>
+            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;">
+                <ul>
+            <li>Logistic regression is widely used for classification problems.</li><br>
+            <li>Logistic regression doesn’t require linear relationship between dependent and independent variables.It can handle various types of relationships because it applies a non-linear log transformation to the predicted odds ratio.<li>Logistic regression doesn’t require linear relationship between dependent and independent variables.  It can handle various types of relationships because it applies a non-linear log transformation to the predicted odds ratio.</li><br>
+
+<li>To avoid over fitting and under fitting, we should include all significant variables. A good approach to ensure this practice is to use a step wise method to estimate the logistic regression.</li><br>
+<li>It requires large sample sizes because maximum likelihood estimates are less powerful at low sample sizes than ordinary least square.</li><br>
+<li>The independent variables should not be correlated with each other i.e. no multi collinearity.  However, we have the options to include interaction effects of categorical variables in the analysis and in the model.</li><br>
+<li>If the values of dependent variable is ordinal, then it is called as Ordinal logistic regression.</li><br>
+            <li>If dependent variable is multi class then it is known as Multinomial Logistic regression.</li><br></ul></p>
         </div>
     </section>
     <script src="static/assets/js/jquery.min.js"></script>

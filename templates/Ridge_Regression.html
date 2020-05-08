@@ -50,16 +50,24 @@
 <body>
     <section style="background-image: url(&quot;static/assets/img/header-bg.jpg&quot;);">
         <div class="container d-flex justify-content-center align-items-center" style="height: 300px;width: 100%;">
-            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LINEAR REGRESSION</h1>
+            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">RIDGE REGRESSION</h1>
         </div>
     </section>
     <section class="position-relative" style="background-color: #e7e4e4;padding:0px;">
         <div class="container justify-content-center align-items-center position-relative" style="width: 100%;">
-            <h4 style="padding: 20px 0px 0px 0px;">What is Linear Regression?</h4>
-            <p>Linear regression is a basic and commonly used type of predictive analysis. &nbsp;The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? &nbsp;(2)
-                Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable? &nbsp;These regression estimates are used
-                to explain the relationship between one dependent variable and one or more independent variables. &nbsp;The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x,
-                where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.<br><br></p>
+            <h4 style="padding: 20px 0px 0px 0px;">What is Ridge Regression?</h4>
+            <p>
+            Ridge Regression is a technique used when the data suffers from multicollinearity (independent variables are highly correlated).
+                In multicollinearity, even though the least squares estimates (OLS) are unbiased, their variances are large which deviates the observed value far from the true value.
+                By adding a degree of bias to the regression estimates, ridge regression reduces the standard errors.
+In linear regression we represented the line equation as:
+<br>
+y=a+ b*x
+<strong>This equation also has an error term. The complete equation becomes:</strong>
+<br>
+<strong>y=a+b*x+e (error term)</strong>,  [error term is the value needed to correct for a prediction error between the observed and predicted value]
+<br>=> y=a+y= a+ b1x1+ b2x2+....+e, for multiple independent variables.<br>
+In a linear equation, prediction errors can be decomposed into two sub components. First is due to the biased and second is due to the variance. Prediction error can occur due to any one of these two or both components. Here, we’ll discuss about the error caused due to variance.Ridge regression solves the multicollinearity problem through shrinkage parameter λ (lambda).<br><br>
             <div class="row">
                 <div class="col"><img class="img-fluid" src="static/assets/img/linear_regression.gif"></div>
                 <div class="col"><img src="static/assets/img/lin2.gif" height="100%" width="100%"></div>
@@ -69,12 +77,15 @@
     <section class="d-flex justify-content-center align-items-center align-content-center" id="adv" style="padding:50px 0px;height: auto;background-color: #e7e4e4;">
         <div class="container" style="height:auto;background-color: #e7e4e4;">
             <h1 class="d-flex justify-content-start align-items-center align-content-center" style="height: 20px;">When to use it?</h1>
-            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul><li> There must be&nbsp;<strong>linear relationship</strong>&nbsp;between independent and dependent variables.</li><br><li> Multiple regression suffers from&nbsp;<strong>multicollinearity, autocorrelation, heteroskedasticity</strong>.</li><br><li>Linear
-            Regression is very sensitive to&nbsp;<strong>Outliers</strong>.</li><br><li> It can terribly affect the regression line and&nbsp;eventually the forecasted values.</li><br><li>Multicollinearity can increase the variance of the coefficient estimates
-            and make the estimates very sensitive to minor changes in the model.The result is that the coefficient estimates are unstable.</li>li<br><li> In case of multiple independent variables,
-                we can go with&nbsp;<strong>forward selection</strong>,&nbsp;<strong>backward elimination</strong>&nbsp;and&nbsp;<strong>step wise approach</strong>&nbsp;for selection of most significant
-                independent variables.</li><br><br><br><br><br></p>
-        </ul>
+            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul>
+<li>The assumptions of this regression is same as least squared regression except normality is not to be assumed</li><br>
+<li>Ridge regression shrinks the value of coefficients but doesn’t reaches zero, which suggests no feature selection feature</li><br>
+<li>This is a regularization method and uses l2 regularization.</li><br>
+</ul>
+
+
+
+</p>
         </div>
     </section>
     <script src="static/assets/js/jquery.min.js"></script>
