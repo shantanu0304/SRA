@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/static/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/static/assets/css/loader.css">
+</head>
+
+<body id="page-top">
+<div class="loader-wrapper">
+    <div class="loader" style="width:25rem;">
+        <img src="/static/assets/img/analysis.gif" class="img-fluid"/>
+    </div>
+</div>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">Regressors</a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">ALGORITHMS</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#about">METHODOLoGY</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="masthead"
+        style="background-image: url(&quot;/static/assets/img/header-bg.jpg&quot;);background-position: top;">
+    <div class="container">
+        <div class="intro-text" style="height: 100vh !important;">
+            <div class="intro-lead-in"><span class="d-none">Welcome To Our Website!</span></div>
+            <div class="intro-heading text-uppercase"><span>Ready for some analysis ???</span></div>
+            <a class="btn btn-xl text-uppercase js-scroll-trigger p-1" role="button" href="#services"
+               style="background-color: transparent;"><i
+                    class="fas fa-angle-double-down flash animated infinite text-white" style="font-size: 3em;"></i></a>
+        </div>
+    </div>
+</header>
+<section id="portfolio" style="background-color: rgba(0,0,0,0.1);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">ALGORITHMS</h2>
+                <h3 class="section-subheading text-muted">Different machine learning algorithms</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <div class="h-100">
+                    <a class="portfolio-link" href="{{url_for('linear')}}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/static/assets/img/portfolio/1-thumbnail.jpg"></a>
+                    <div class="portfolio-caption">
+                        <!--                            <a href="{{url_for('linear')}}"></a>-->
+                        <h4></h4>
+                        <h4>Linear Regression<br><br></h4>
+                        <h4></h4>
+                        <h4></h4>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/portfolio/2-thumbnail.jpg"></a>
+                <div class="portfolio-caption">
+                    <h4>Polynomial Regression</h4>
+                    <p class="text-muted">Graphic Design</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/portfolio/3-thumbnail.jpg"></a>
+                <div class="portfolio-caption">
+                    <h4>Multinomial Regression</h4>
+                    <p class="text-muted">Identity</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/portfolio/4-thumbnail.jpg"></a>
+                <div class="portfolio-caption">
+                    <h4>Nominal Regression</h4>
+                    <p class="text-muted">Branding</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid img-fluid" src="/static/assets/img/portfolio/5-thumbnail.jpg"></a>
+                <div class="portfolio-caption">
+                    <h4>Regression&nbsp;</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/portfolio/6-thumbnail.jpg"></a>
+                <div class="portfolio-caption">
+                    <h4>Regression</h4>
+                    <p class="text-muted">Photography</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase">METHODOLOGY TO ANALYSE YOUR DATASET</h2>
+                <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-group timeline">
+                    <li class="list-group-item">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/1.jpg"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 1</h4>
+                                <h4 class="subheading">DATA CLEANING</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                    sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                                    incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/2.jpg"></div>
+                        <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 2<br></h4>
+                                <h4><strong>EXPLORATORY DATA ANALYSIS</strong><br></h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"
+                                   data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                                    ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae
+                                    sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/3.jpg"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 3</h4>
+                                <h4>DATA PREPARATION</h4>
+                                <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-aos="fade" data-aos-delay="1500" data-aos-once="true" class="text-muted">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                    sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                                    incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/4.jpg"></div>
+                        <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>STEP 4</h4>
+                                <h4 class="subheading">APPLY MACHINE LEARNING ALGORITHM</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                    sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                                    incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-lg-flex align-items-lg-start timeline">
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/4.jpg"></div>
+                        <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
+                             class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text-right">STEP 5</h4>
+                                <h4 class="text-right subheading">TESTING</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                                    sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                                    incidunt et ea quo dolore laudantium consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item timeline-inverted">
+                        <div class="d-flex justify-content-center align-items-center timeline-image" data-aos="fade-up"
+                             data-aos-delay="1450" data-aos-once="true" style="background-color: rgb(35,58,75);">
+                            <h4 class="d-lg-flex align-content-center justify-content-lg-center align-items-lg-end flash animated infinite m-0">
+                                RESULT</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container d-flex justify-content-center align-items-center p-5"><a class="pl-2 pr-2 pt-1 pb-1"
+                                                                               href="{{url_for('dataset')}}"
+                                                                               style="color: rgb(43,38,24);font-size: 20px;background-color: #bbc3ae;">&nbsp;CLICK
+    HERE TO ANALYSE YOUR DATASET&nbsp;</a></div>
+<section id="team" class="bg-light">
+    <div class="container">
+        <h1 class="text-uppercase text-center mb-5 pb-5">OUR TEAM</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
+                    <h4>Prashant Malhotra</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/2.jpg">
+                    <h4>Sudarshan Sharma</h4>
+                    <p class="text-muted">Lead Marketer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/3.jpg">
+                    <h4>Shubhendra Pandey</h4>
+                    <p class="text-muted">Lead Developer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
+                    <h4>Yash Vardhan Srivastava</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
+                    <h4>Shantanu Mittal</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" style="background-image:url('/static/assets/img/map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">want to get in touch with us ??</h2>
+                <h3 class="section-subheading text-muted">Please fill the form and we will get in touch with you
+                    soon.!!!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <div class="form-row">
+                        <div class="col col-md-6">
+                            <div class="form-group"><input class="form-control" type="text" id="name"
+                                                           placeholder="Your Name *" required=""><small
+                                    class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                            <div class="form-group"><input class="form-control" type="email" id="email"
+                                                           placeholder="Your Email *" required=""><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *"
+                                                           required=""><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><textarea class="form-control" id="message"
+                                                              placeholder="Your Message *" required=""></textarea><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Knerdy_Nights 2020</span></div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/1-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/2-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/3-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/4-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal5">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/5-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade portfolio-modal text-center" role="dialog" tabindex="-1" id="portfolioModal6">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
+                                    class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/6-full.jpg">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae
+                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: January 2017</li>
+                                    <li>Client: Threads</li>
+                                    <li>Category: Illustration</li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button"><i
+                                        class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="/static/assets/js/agency.js"></script>
+<script src="/static/assets/js/loader.js"></script>
+</body>
+
+</html>

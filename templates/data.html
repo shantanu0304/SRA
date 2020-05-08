@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/static/assets/css/Navigation-with-Button.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">Regressors</a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li role="presentation" class="nav-item"></li>
+                <li role="presentation" class="nav-item"><a class="nav-link js-scroll-trigger"
+                                                            href="{{url_for('index')}}">Homepage</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="contac" style="background-image:url('map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Please fill the details FIRST and THEN upload your DATASET
+                    BELOW</h2>
+                <h3 class="section-subheading text-muted">Please fill the form and we will get in touch with you
+                    soon.!!!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" name="contactForm" novalidate="novalidate" action={{url_for('success')}} method="POST" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="col col-md-6">
+                            <div class="form-group"><input type="text" class="form-control" id="name"
+                                                           placeholder="No.of Rows in the dataset" required/><small
+                                    class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                            <div class="form-group"><input type="email" class="form-control" id="email"
+                                                           placeholder="No.of Columns in the dataset" required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group"><input type="tel" class="form-control"
+                                                           placeholder="Type of File ? eg.csv,excel etc"
+                                                           required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group">
+                                <!--                                <label for="dataset" style="color: white;padding: 0.8rem 2rem;background-color: black;border-radius: 5px;cursor: pointer;box-shadow: 1px 1px 5px black;">Upload csv file</label>-->
+                                <input type="file" id="dataset" name="dataset" style="color: white;padding: 0.8rem 2rem;background-color: black;width:100%;border-radius: 5px;cursor: pointer;box-shadow: 1px 1px 5px black;"/>
+
+                                <small class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <!--                        <div class="col-md-6 d-flex align-items-center justify-content-center">-->
+                        <!--                            <div class="form-group"><label for="dataset" style="color: white;padding: 0.8rem 2rem;background-color: black;border-radius: 5px;cursor: pointer;box-shadow: 1px 1px 5px white;">Upload csv file</label><input type="file" id="dataset" style="color: white;"-->
+                        <!--                                    hidden /><small class="form-text text-danger help-block lead"></small></div>-->
+                        <!--                        </div>-->
+                        <div class="col">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                                ANALYSE MY DATASET
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" style="background-image:url('map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">want to get in touch with us ??</h2>
+                <h3 class="section-subheading text-muted">Please fill the form and we will get in touch with you
+                    soon.!!!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <div class="form-row">
+                        <div class="col col-md-6">
+                            <div class="form-group"><input type="text" class="form-control" id="name"
+                                                           placeholder="Your Name *" required/><small
+                                    class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                            <div class="form-group"><input type="email" class="form-control" id="email"
+                                                           placeholder="Your Email *" required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group"><input type="tel" class="form-control" placeholder="Your Phone *"
+                                                           required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><textarea class="form-control" id="message"
+                                                              placeholder="Your Message *" required></textarea><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="/static/assets/js/agency.js"></script>
+<script src="/static/assets/js/loader.js"></script>
+</body>
+</html>
