@@ -50,18 +50,14 @@
 <body>
     <section style="background-image: url(&quot;static/assets/img/header-bg.jpg&quot;);">
         <div class="container d-flex justify-content-center align-items-center" style="height: 300px;width: 100%;">
-            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LINEAR REGRESSION</h1>
+            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LASSO REGRESSION</h1>
         </div>
     </section>
     <section class="position-relative" style="background-color: #e7e4e4;padding:0px;">
         <div class="container justify-content-center align-items-center position-relative" style="width: 100%;">
-            <h4 style="padding: 20px 0px 0px 0px;">What is Linear Regression?</h4>
-            <p style="font-family: railway;">Linear regression is a basic and commonly used type of predictive analysis. &nbsp;The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? &nbsp;(2)
-                Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable? &nbsp;These regression estimates are used
-                to explain the relationship between one dependent variable and one or more independent variables. &nbsp;The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x,
-                where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.<br><br></p>
-            <div class="row">
-                <div class="col"><img class="img-fluid" src="static/assets/img/linear_regression.gif"></div>
+            <h4 style="padding: 20px 0px 0px 0px;">What is Lasso Regression?</h4>
+            <p>Similar to Ridge Regression, Lasso (Least Absolute Shrinkage and Selection Operator) also penalizes the absolute size of the regression coefficients. In addition, it is capable of reducing the variability and improving the accuracy of linear regression models.  Look at the equation below: Lasso regression differs from ridge regression in a way that it uses absolute values in the penalty function, instead of squares. This leads to penalizing (or equivalently constraining the sum of the absolute values of the estimates) values which causes some of the parameter estimates to turn out exactly zero. Larger the penalty applied, further the estimates get shrunk towards absolute zero. This results to variable selection out of given n variables.<br><br><div class="row">
+                <br><div class="col"><img class="img-fluid" src="static/assets/img/linear_regression.gif"></div>
                 <div class="col"><img src="static/assets/img/lin2.gif" height="100%" width="100%"></div>
             </div>
         </div>
@@ -69,11 +65,12 @@
     <section class="d-flex justify-content-center align-items-center align-content-center" id="adv" style="padding:50px 0px;height: auto;background-color: #e7e4e4;">
         <div class="container" style="height:auto;background-color: #e7e4e4;">
             <h1 class="d-flex justify-content-start align-items-center align-content-center" style="height: 20px;">When to use it?</h1>
-            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;">1) There must be&nbsp;<strong>linear relationship</strong>&nbsp;between independent and dependent variables.<br>2) Multiple regression suffers from&nbsp;<strong>multicollinearity, autocorrelation, heteroskedasticity</strong>.<br>3) Linear
-                Regression is very sensitive to&nbsp;<strong>Outliers</strong>.<br>4) It can terribly affect the regression line and&nbsp;eventually the forecasted values.<br>5) Multicollinearity can increase the variance of the coefficient estimates
-                and make the estimates very sensitive to minor changes in the model.The result is that the coefficient estimates are&nbsp; &nbsp; unstable.<br>6) In case of multiple independent variables,
-                we can go with&nbsp;<strong>forward selection</strong>,&nbsp;<strong>backward elimination</strong>&nbsp;and&nbsp;<strong>step wise approach</strong>&nbsp;for selection of most significant
-                independent variables.<br><br><br><br><br></p>
+            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul>
+<li>The assumptions of lasso regression is same as least squared regression except normality is not to be assumed</li><br>
+<li>Lasso Regression shrinks coefficients to zero (exactly zero), which certainly helps in feature selection</li><br>
+<li>Lasso is a regularization method and uses l1 regularization</li><br>
+<li>If group of predictors are highly correlated, lasso picks only one of them and shrinks the others to zero</li><br>
+</ul></p>
         </div>
     </section>
     <script src="static/assets/js/jquery.min.js"></script>

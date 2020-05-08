@@ -50,16 +50,15 @@
 <body>
     <section style="background-image: url(&quot;static/assets/img/header-bg.jpg&quot;);">
         <div class="container d-flex justify-content-center align-items-center" style="height: 300px;width: 100%;">
-            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">LINEAR REGRESSION</h1>
+            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 5PX;background-color: rgb(72,82,82);width: 666px;">POLYNOMIAL REGRESSION</h1>
         </div>
     </section>
     <section class="position-relative" style="background-color: #e7e4e4;padding:0px;">
         <div class="container justify-content-center align-items-center position-relative" style="width: 100%;">
-            <h4 style="padding: 20px 0px 0px 0px;">What is Linear Regression?</h4>
-            <p style="font-family: railway;">Linear regression is a basic and commonly used type of predictive analysis. &nbsp;The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? &nbsp;(2)
-                Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable? &nbsp;These regression estimates are used
-                to explain the relationship between one dependent variable and one or more independent variables. &nbsp;The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x,
-                where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.<br><br></p>
+            <h4 style="padding: 20px 0px 0px 0px;">What is Polynomial Regression?</h4>
+            <p>A regression equation is a polynomial regression equation if the power of independent variable is more than 1. The equation below represents a polynomial equation:<br><strong> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y=a+b*x^2</strong><br>
+
+                In this regression technique, the best fit line is not a straight line. It is rather a curve that fits into the data points.<br></p>
             <div class="row">
                 <div class="col"><img class="img-fluid" src="static/assets/img/linear_regression.gif"></div>
                 <div class="col"><img src="static/assets/img/lin2.gif" height="100%" width="100%"></div>
@@ -69,11 +68,10 @@
     <section class="d-flex justify-content-center align-items-center align-content-center" id="adv" style="padding:50px 0px;height: auto;background-color: #e7e4e4;">
         <div class="container" style="height:auto;background-color: #e7e4e4;">
             <h1 class="d-flex justify-content-start align-items-center align-content-center" style="height: 20px;">When to use it?</h1>
-            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;">1) There must be&nbsp;<strong>linear relationship</strong>&nbsp;between independent and dependent variables.<br>2) Multiple regression suffers from&nbsp;<strong>multicollinearity, autocorrelation, heteroskedasticity</strong>.<br>3) Linear
-                Regression is very sensitive to&nbsp;<strong>Outliers</strong>.<br>4) It can terribly affect the regression line and&nbsp;eventually the forecasted values.<br>5) Multicollinearity can increase the variance of the coefficient estimates
-                and make the estimates very sensitive to minor changes in the model.The result is that the coefficient estimates are&nbsp; &nbsp; unstable.<br>6) In case of multiple independent variables,
-                we can go with&nbsp;<strong>forward selection</strong>,&nbsp;<strong>backward elimination</strong>&nbsp;and&nbsp;<strong>step wise approach</strong>&nbsp;for selection of most significant
-                independent variables.<br><br><br><br><br></p>
+            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul>
+<li>While there might be a temptation to fit a higher degree polynomial to get lower error, this can result in over-fitting. Always plot the relationships to see the fit and focus on making sure that the curve fits the nature of the problem.</li><br>
+<li>Especially look out for curve towards the ends and see whether those shapes and trends make sense. Higher polynomials can end up producing wierd results on extrapolation.</li><br>
+</ul></p>
         </div>
     </section>
     <script src="static/assets/js/jquery.min.js"></script>
