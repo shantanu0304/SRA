@@ -49,6 +49,10 @@ def success():
     # add below
     if(request.method=='POST'):
         data=request.files["dataset"]
+        ordinal=request.form["ordinal_columns"]
+        target=request.form["target"]
+        print(target)
+        print(ordinal)
         data.save(data.filename)
         print(str(data.filename))
         h= str(data.filename)
