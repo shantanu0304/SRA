@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="text-uppercase section-heading">ALGORITHMS</h2>
-                <h3 class="section-subheading text-muted">Different machine learning algorithms</h3>
+                <h3 class="section-subheading text-muted">Some informative insights on different machine learning algorithms</h3>
             </div>
         </div>
         <div class="row">
@@ -72,8 +72,8 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="/static/assets/img/lin2.gif" style="height:272px"></a>
-                    <div class="portfolio-caption">
+                        <img class="img-fluid" src="/static/assets/img/lin2.gif" style="height:263px;"></a>
+                    <div class="portfolio-caption" style="height:80px;">
                         <!--                            <a href="{{url_for('linear')}}"></a>-->
                         <h4></h4>
                         <h4>Linear Regression<br><br></h4>
@@ -84,25 +84,14 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 portfolio-item">
-                <a class="portfolio-link"  href="{{url_for('logistic')}}">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="/static/assets/img/logistic.gif"></a>
-                <div class="portfolio-caption">
-                    <h4>Logistic Regression</h4>
-                    <p class="text-muted">Graphic Design</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 portfolio-item">
                 <a class="portfolio-link" href="{{url_for('polynomial')}}">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="/static/assets/img/polynomial.gif"></a>
+                    <img class="img-fluid" src="/static/assets/img/blogs/p1.gif"></a>
                 <div class="portfolio-caption">
                     <h4>Polynomial Regression</h4>
-                    <p class="text-muted">Identity</p>
+                    <p class="text-muted"></p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 portfolio-item">
@@ -113,7 +102,7 @@
                     <img class="img-fluid" src="/static/assets/img/stepwise.gif"></a>
                 <div class="portfolio-caption">
                     <h4>Stepwise Regression</h4>
-                    <p class="text-muted">Branding</p>
+                    <p class="text-muted"></p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 portfolio-item">
@@ -121,10 +110,10 @@
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid img-fluid" src="/static/assets/img/ridge.gif" style="height:210px width:100px"></a>
+                    <img class="img-fluid" src="/static/assets/img/ridge1.gif" style="height:263px width:350p !important;"></a>
                 <div class="portfolio-caption">
                     <h4>Ridge Regression&nbsp;</h4>
-                    <p class="text-muted">Website Design</p>
+                    <p class="text-muted"></p>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4 portfolio-item">
@@ -132,21 +121,32 @@
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="/static/assets/img/lasso.gif"></a>
+                    <img class="img-fluid" src="/static/assets/img/lasso.gif" style="height:260px;"></a>
                 <div class="portfolio-caption">
                     <h4>Lasso Regression</h4>
-                    <p class="text-muted">Photography</p>
+                    <p class="text-muted"></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <a class="portfolio-link"  href="{{url_for('elastic')}}">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="/static/assets/img/elastic1.gif" style="height:260px;"></a>
+                <div class="portfolio-caption">
+                    <h4>ElasticNet Regression</h4>
+                    <p class="text-muted"></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section id="about">
+<section id="about" style="background-color: #d3d3d32b;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="text-uppercase">METHODOLOGY TO ANALYSE YOUR DATASET</h2>
-                <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="text-muted section-subheading">The steps are given below.</h3>
             </div>
         </div>
         <div class="row">
@@ -154,7 +154,7 @@
                 <ul class="list-group timeline">
                     <li class="list-group-item">
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
-                                class="rounded-circle img-fluid" src="/static/assets/img/about/1.jpg"></div>
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/cleaning.jfif" style="height:156px;width:156px;"></div>
                         <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
                              class="timeline-panel">
                             <div class="timeline-heading">
@@ -162,13 +162,13 @@
                                 <h4 class="subheading">DATA CLEANING</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">We try and prepare data for analysis by removing or modifying data that is incorrect, incomplete, irrelevant, duplicated, or improperly formatted. This data is usually not necessary or helpful when it comes to analyzing data because it may hinder the process or provide inaccurate results. There are several methods for cleaning data depending on how it is stored along with the answers being sought.</p>
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">We try and prepare data for analysis by removing or modifying data that is incorrect, incomplete, irrelevant, duplicated, or improperly formatted. This data is usually not necessary or helpful when it comes to analyzing data because it may hinder the process or provide inaccurate results. There are several methods for cleaning data depending on how it is stored along with the answers being sought.</p>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item timeline-inverted">
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
-                                class="rounded-circle img-fluid" src="/static/assets/img/about/2.jpg"></div>
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/exploration.jpg" style="height:156px;width:156px;"></div>
                         <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>STEP 2<br></h4>
@@ -177,13 +177,13 @@
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted" data-aos="fade" data-aos-duration="1500" data-aos-delay="1500"
-                                   data-aos-once="true">In this step we perform initial investigation on data so as to discover patterns to test hypothesis and to check assumptions with the help of summary statistics and graphical representations. It is a good practice to understand the data first and try to gather as many insights from it. EDA is all about making sense of data in hand, before getting them dirty with it.</p>
+                                   data-aos-once="true" style="text-align:justify;">In this step we perform initial investigation on data so as to discover patterns to test hypothesis and to check assumptions with the help of summary statistics and graphical representations. It is a good practice to understand the data first and try to gather as many insights from it. EDA is all about making sense of data in hand, before getting them dirty with it.</p>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
-                                class="rounded-circle img-fluid" src="/static/assets/img/about/3.jpg"></div>
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/preparation.jpg"style="height:156px;width:156px;"></div>
                         <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
                              class="timeline-panel">
                             <div class="timeline-heading">
@@ -192,26 +192,26 @@
                                 <h4 class="subheading"></h4>
                             </div>
                             <div class="timeline-body">
-                                <p data-aos="fade" data-aos-delay="1500" data-aos-once="true" class="text-muted">This step involves  process of cleaning and transforming raw data prior to processing and analysis. It is an important step prior to processing and often involves reformatting data, making corrections to data and the combining of data sets to enrich data. Data preparation is often a lengthy undertaking for data professionals or business users, but it is essential as a prerequisite to put data in context in order to turn it into insights and eliminate bias resulting from poor data quality.</p>
+                                <p data-aos="fade" data-aos-delay="1500" data-aos-once="true" class="text-muted" style="text-align:justify;">This step involves  process of cleaning and transforming raw data prior to processing and analysis. It is an important step prior to processing and often involves reformatting data, making corrections to data and the combining of data sets to enrich data. Data preparation is often a lengthy undertaking for data professionals or business users, but it is essential as a prerequisite to put data in context in order to turn it into insights and eliminate bias resulting from poor data quality.</p>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item timeline-inverted">
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
-                                class="rounded-circle img-fluid" src="/static/assets/img/about/4.jpg"></div>
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/apply.jpg" style="height:156px;width:156px;"></div>
                         <div data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>STEP 4</h4>
                                 <h4 class="subheading">APPLY MACHINE LEARNING ALGORITHM</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">This is the step where you can expect the magic to happen , we apply different regressors on the prepared dataset (whole automated process) , and then select the algorithm giving the best result so that end user can have  the most optimised result without any fuss of implementing the whole process themselves .</p>
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">This is the step where you can expect the magic to happen , we apply different regressors on the prepared dataset (whole automated process) , and then select the algorithm giving the best result so that end user can have  the most optimised result without any fuss of implementing the whole process themselves .</p>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item d-lg-flex align-items-lg-start timeline">
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-once="true" class="timeline-image"><img
-                                class="rounded-circle img-fluid" src="/static/assets/img/about/4.jpg"></div>
+                                class="rounded-circle img-fluid" src="/static/assets/img/about/testing.png" style="height:156px;width:156px;"></div>
                         <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true"
                              class="timeline-panel">
                             <div class="timeline-heading">
@@ -219,7 +219,7 @@
                                 <h4 class="text-right subheading">TESTING</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true">Software testing will be one of the most critical factors that determine the success of a machine learning system. We give real importance to this step as potentially this is one most important steps that tells us that weather our intuition or application is going in the right direction or not . As from a testing standpoint, the results for a fixed set of input will change as we learn more about the inputs.</p>
+                                <p class="text-muted" data-aos="fade" data-aos-delay="1500" data-aos-once="true" style="text-align:justify;">Software testing will be one of the most critical factors that determine the success of a machine learning system. We give real importance to this step as potentially this is one most important steps that tells us that weather our intuition or application is going in the right direction or not . As from a testing standpoint, the results for a fixed set of input will change as we learn more about the inputs.</p>
                             </div>
                         </div>
                     </li>
@@ -244,53 +244,9 @@
         <h1 class="text-uppercase text-center mb-5 pb-5">OUR TEAM</h1>
         <div class="row d-flex justify-content-center">
             <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
-                    <h4>Prashant Malhotra</h4>
-                    <p class="text-muted">Lead Designer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/2.jpg">
-                    <h4>Sudarshan Sharma</h4>
-                    <p class="text-muted">Lead Marketer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/3.jpg">
-                    <h4>Shubhendra Pandey</h4>
-                    <p class="text-muted">Lead Developer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
-                    <h4>Yash Vardhan Srivastava</h4>
-                    <p class="text-muted">Lead Designer</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/1.jpg">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/shantanu1.jpg">
                     <h4>Shantanu Mittal</h4>
-                    <p class="text-muted">Lead Designer</p>
+                    <p class="text-muted"></p>
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -298,6 +254,52 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/sudarshan.jpeg">
+                    <h4>Sudarshan Sharma</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/prashant.jpeg">
+                    <h4>Prashant Malhotra</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/yash1.jfif">
+                    <h4>Yash Vardhan Srivastava</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="/static/assets/img/team/shubhendra.jpg">
+                    <h4>Shubhendra Pandey</h4>
+                    <p class="text-muted"></p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -376,12 +378,9 @@
                                 <h2 class="text-uppercase">Project Name</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p><img
                                     class="img-fluid d-block mx-auto" src="/static/assets/img/portfolio/1-full.jpg">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae
-                                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p></p>
                                 <ul class="list-unstyled">
-                                    <li>Date: January 2017</li>
+                                    <li>Date: January 2020</li>
                                     <li>Client: Threads</li>
                                     <li>Category: Illustration</li>
                                 </ul>

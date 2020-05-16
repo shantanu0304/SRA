@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html style="width: 1000pxS;background-color: #e7e4e4;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/static/assets/css/Navigation-with-Button.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">Regressors</a>
+        <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+                type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li role="presentation" class="nav-item"></li>
+                <li role="presentation" class="nav-item"><a class="nav-link js-scroll-trigger"
+                                                            href="{{url_for('index')}}">Homepage</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!DOCTYPE html>
+
+
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
+<!--    <title>Blog_design</title>-->
+<!--    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
+<!--    <link rel="stylesheet" href="static/assets/css/styles.css">-->
+<!--</head>-->
+
+<body>
+    <section style="background-color:currentcolor;padding-bottom:100px;">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 50px;width: 100%;padding-top:43px;">
+            <h1 class="text-center shadow-lg" style="color: rgb(222,215,215);opacity: 1;padding: 14PX;background-color: rgb(72,82,82);width: 666px;">ELASTICNET REGRESSION</h1>
+        </div>
+    </section>
+    <section class="position-relative" style="background-color: #e7e4e4;padding:0px;">
+        <div class="container justify-content-center align-items-center position-relative" style="width: 100%;">
+            <h4 style="padding: 20px 0px 0px 0px;">What is ElasticNet Regression?</h4>
+            <p >ElasticNet is hybrid of Lasso and Ridge Regression techniques. It is trained with L1 and L2 prior as regularizer. Elastic-net is useful when there are multiple features which are correlated. Lasso is likely to pick one of these at random, while elastic-net is likely to pick both.<br>A practical advantage of trading-off between Lasso and Ridge is that, it allows Elastic-Net to inherit some of Ridge’s stability under rotation.<br><br></p>
+            <div class="row">
+                <div class="col"><img class="img-fluid" src="static/assets/img/blogs/e1.png" style="padding-left:280px;"></div>
+<!--                <div class="col"><img src="static/assets/img/blogs/e2.png" height="100%" width="100%"></div>-->
+            </div>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center align-items-center align-content-center" id="adv" style="padding:50px 0px;height: auto;background-color: #e7e4e4;">
+        <div class="container" style="height:auto;background-color: #e7e4e4;">
+            <h1 class="d-flex justify-content-start align-items-center align-content-center" style="height: 20px;">When to use it?</h1>
+            <p class="border rounded-0" style="background-color: #e7e4e29;padding: 0px;"><ul>
+<li>It encourages group effect in case of highly correlated variables</li><br>
+<li>There are no limitations on the number of selected variables</li><br>
+<li>It can suffer with double shrinkage</li><br>
+</ul></p>
+        </div>
+    </section>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <section id="contact" style="background-image:url('map-image.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading" style="padding-top:50px;">want to get in touch with us ??</h2>
+                <h3 class="section-subheading text-muted">Please fill the form and we will get in touch with you
+                    soon.!!!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" name="contactForm" novalidate="novalidate">
+                    <div class="form-row">
+                        <div class="col col-md-6">
+                            <div class="form-group"><input type="text" class="form-control" id="name"
+                                                           placeholder="Your Name *" required/><small
+                                    class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                            <div class="form-group"><input type="email" class="form-control" id="email"
+                                                           placeholder="Your Email *" required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                            <div class="form-group"><input type="tel" class="form-control" placeholder="Your Phone *"
+                                                           required/><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group"><textarea class="form-control" id="message"
+                                                              placeholder="Your Message *" required></textarea><small
+                                    class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="col">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
