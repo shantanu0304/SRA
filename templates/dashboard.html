@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/dash/img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/dash/css/owl.theme.css">
+    <link rel="stylesheet" href="/static/dash/css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- jvectormap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <!-- notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/notika-custom-icon.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/main.css">
+    <!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/wave/waves.min.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="/static/dash/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="/static/dash/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="#"><img src="/static/dash/img/logo/logo.png" alt="" /></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="breadcomb-area">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  					<div class="breadcomb-list">
+  						<div class="row">
+  							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  								<div class="breadcomb-wp">
+  									<div class="breadcomb-icon">
+  										<i class="notika-icon notika-bar-chart"></i>
+  									</div>
+  									<div class="breadcomb-ctn">
+  										<h2>Dashboard</h2>
+                      <p>Results</p>
+  									</div>
+  								</div>
+  							</div>
+  							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+  								<div class="breadcomb-report">
+  									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+  								</div>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+    <!-- Main Menu area End-->
+    <!-- Start Status area -->
+    <div class="notika-status-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span class="counter">{{params.best_acc}}</span>%</h2>
+                            <p>Best Accuracy Found</p>
+                        </div>
+                        <div class="sparkline-bar-stats1">9,4,8,6,5,6,4,8,3,5,9,5</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span class="counter">{{params.rows}}</span></h2>
+                            <p>Rows</p>
+                        </div>
+                        <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span class="counter">{{params.feat_count}}</span></h2>
+                            <p>Selected Features</p>
+                        </div>
+                        <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span class="counter">{{params.nullcount}}</span></h2>
+                            <p>Null Values</p>
+                        </div>
+                        <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Status area-->
+    <br>
+    <!-- Statistic area-->
+    <div class="bar-chart-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <div class="bar-chart-wp">
+                      <canvas height="140vh" width="180vw" id="barchart1"></canvas>
+                  </div>
+              </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="bar-chart-wp sm-res-mg-t-30 chart-display-nn">
+                        <canvas height="140vh" width="180vw" values=1 id="barchart2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sale Statistic area-->
+    <br>
+    <!-- Start Email Statistic area-->
+    <div class="notika-email-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="email-statis-inner notika-shadow">
+                        <div class="email-ctn-round">
+                            <div class="email-rdn-hd">
+                              <h2>Email Statistics</h2>
+							              </div>
+                            <div class="email-statis-wrap">
+                                <div class="email-round-nock">
+                                    <input type="text" class="knob" value="0" data-rel=60 data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true">
+                                </div>
+                                <div class="email-ctn-nock">
+                                    <p>Total Emails Sent</p>
+                                </div>
+                            </div>
+                            <div class="email-round-gp">
+                                <div class="email-round-pro">
+                                    <div class="email-signle-gp">
+                                        <input type="text" class="knob" value="0" data-rel="75" data-linecap="round" data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true" disabled>
+                                    </div>
+                                    <div class="email-ctn-nock">
+                                        <p>Bounce Rate</p>
+                                    </div>
+                                </div>
+                                <div class="email-round-pro">
+                                    <div class="email-signle-gp">
+                                        <input type="text" class="knob" value="0" data-rel="35" data-linecap="round" data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true" disabled>
+                                    </div>
+                                    <div class="email-ctn-nock">
+                                        <p>Total Opened</p>
+                                    </div>
+                                </div>
+                                <div class="email-round-pro sm-res-ds-n lg-res-mg-bl">
+                                    <div class="email-signle-gp">
+                                        <input type="text" class="knob" value="0" data-rel="45" data-linecap="round" data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true" disabled>
+                                    </div>
+                                    <div class="email-ctn-nock">
+                                        <p>Total Ignored</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="recent-post-wrapper notika-shadow sm-res-mg-t-30 tb-res-ds-n dk-res-ds">
+
+                              <div class="realtime-ctn">
+                                  <div class="realtime-title ongoing-hd-wd">
+                                      <h2>Top 5 Features Importance</h2>
+                                      <p>MinMax Scaled</p>
+                                  </div>
+                              </div>
+
+                              <div class="skill-content-3 ongoing-tsk">
+                                  <div class="skill">
+                                      {% for para,val in params.features %}
+                                      <div class="progress">
+                                          <div class="lead-content">
+                                              <p>{{para}}</p>
+                                          </div>
+                                          <div class="progress-bar wow fadeInLeft" data-progress={{val}} style=" width:{{val}}%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>{{val}}</span>
+                                          </div>
+                                      </div>
+                                      {% endfor %}
+                              </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>Recent Items</h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <table class="table table-inner table-vmiddle">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th style="width: 60px">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="f-500 c-cyan">4555</td>
+                                            <td>Samsung Galaxy Mega</td>
+                                            <td class="f-500 c-cyan">$921</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">4556</td>
+                                            <td>Huawei Ascend P6</td>
+                                            <td class="f-500 c-cyan">$240</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">8778</td>
+                                            <td>HTC One M8</td>
+                                            <td class="f-500 c-cyan">$400</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">5667</td>
+                                            <td>Samsung Galaxy Alpha</td>
+                                            <td class="f-500 c-cyan">$870</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">7886</td>
+                                            <td>LG G3</td>
+                                            <td class="f-500 c-cyan">$790</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<div id="recent-items-chart" class="flot-chart-items flot-chart vt-ct-it tb-rc-it-res"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email Statistic area-->
+
+
+
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018. All rights reserved. Nerdy Knights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+    <!-- jquery
+		============================================ -->
+    <script src="/static/dash/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="/static/dash/js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="/static/dash/js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="/static/dash/js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="/static/dash/js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="/static/dash/js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="/static/dash/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="/static/dash/js/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/dash/js/counterup/waypoints.min.js"></script>
+    <script src="/static/dash/js/counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="/static/dash/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- sparkline JS
+		============================================ -->
+    <script src="/static/dash/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/dash/js/sparkline/sparkline-active.js"></script>
+    <!-- flot JS
+		============================================ -->
+    <script src="/static/dash/js/flot/jquery.flot.js"></script>
+    <script src="/static/dash/js/flot/jquery.flot.resize.js"></script>
+    <script src="/static/dash/js/flot/jquery.flot.pie.js"></script>
+    <script src="/static/dash/js/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="/static/dash/js/flot/jquery.flot.orderBars.js"></script>
+    <script src="/static/dash/js/flot/curvedLines.js"></script>
+    <script src="/static/dash/js/flot/flot-active.js"></script>
+    <!-- knob JS
+		============================================ -->
+    <script src="/static/dash/js/knob/jquery.knob.js"></script>
+    <script src="/static/dash/js/knob/jquery.appear.js"></script>
+    <script src="/static/dash/js/knob/knob-active.js"></script>
+    <!--  Chat JS
+		============================================ -->
+	  <script src="/static/dash/js/chat/moment.min.js"></script>
+    <script src="/static/dash/js/chat/jquery.chat.js"></script>
+    <!-- Charts JS
+		============================================ -->
+    <script src="/static/dash/js/charts/Chart.js"></script>
+    <script src="/static/dash/js/charts/bar-chart.js"></script>
+    <!--  todo JS
+		============================================ -->
+    <script src="/static/dash/js/todo/jquery.todo.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="/static/dash/js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="/static/dash/js/main.js"></script>
+</body>
+
+</html>
