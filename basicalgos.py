@@ -37,44 +37,38 @@ def basicalgos(X_train, X_test, y_train, y_test, params):
                      "weights": ['uniform', 'distance'],
                      "p": [1, 2]}
 
-    decision_tree_paramgrid = {'max_depth': [None, 2, 5, 9],
-                               'min_samples_split': [2, 5, 9, 13],
-                               'min_samples_leaf': [2, 5, 9, 13],
-                               'random_state': [123],
-                               'max_leaf_nodes': [2, 5, 9, 13]}
+    decision_tree_paramgrid = {'max_depth': [None, 2, 5, 10, 15],
+                               'min_samples_split': [2, 5, 10, 15],
+                               'min_samples_leaf': [2, 5, 10, 15],
+                               'random_state': [129],
+                               'max_leaf_nodes': [2, 5, 10, 15]}
 
     linear_regression = LinearRegression()
-
     ridge = GridSearchCV(estimator=Ridge(), param_grid=ridge_paramgrid, n_jobs=10, cv=5)
-
     lasso = GridSearchCV(estimator=Lasso(), param_grid=lasso_paramgrid, n_jobs=10, cv=5)
-
     lasso_lars = GridSearchCV(estimator=LassoLars(), param_grid=lassolars_paramgrid, n_jobs=10, cv=5)
-
     elasticnet = GridSearchCV(estimator=ElasticNet(), param_grid=elasticnet_paramgrid, n_jobs=10, cv=5)
-
     knn = GridSearchCV(estimator=KNeighborsRegressor(), param_grid=knn_paramgrid, n_jobs=10, cv=5)
-
     decisiontree = GridSearchCV(estimator=DecisionTreeRegressor(), param_grid=decision_tree_paramgrid, n_jobs=10, cv=5)
 
     models = [ridge, lasso, lasso_lars, elasticnet, knn, decisiontree]
     models_names = ["ridge", "lasso", "lasso_lars", "elasticnet", "knn", "decisiontree"]
 
     for i in range(6):
-        print(i + 1, "==============================================================================================")
+        print(i + 1, "=================================================================================================")
         print(models_names[i], "training started, Please wait.............")
         print(models_names[i], "details:")
         models[i].fit(X_train, y_train)
         predictions = models[i].predict(X_test)
-        print('RMSE in', models_names[i], "-", np.sqrt(metrics.mean_squared_error(y_test, predictions)))
+        print('RMSE in ', models_names[i], " - ", np.sqrt(metrics.mean_squared_error(y_test, predictions)))
         print("---------------------")
-        print("Best parameters of", models_names[i], ":")
+        print("Best parameters of ", models_names[i], ":")
         print(models[i].best_params_)
         print("---------------------")
-        print("Score of", models_names[i], "is", models[i].score(X_test, y_test))
+        print("Score of ", models_names[i], " is ", models[i].score(X_test, y_test))
         print("---------------------")
-        print("Training Finished")
-        print("================================================================================================")
+        print("Training Finished.")
+        print("========================================================================================================")
         params["algorithms"][models_names[i]] = (models[i].score(X_test, y_test))*100
 
     params["algokeys"] = list(params["algorithms"].keys())
